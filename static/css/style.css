@@ -1,0 +1,65 @@
+body{
+    background: #47634a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #366075, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #215169, #335c37); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 25em;
+    margin-left: 9em;
+    border-radius: 1em;
+    opacity: 0.9;
+    width: 14em;
+  }
+
+  .card2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 25em;
+    width: 30em;;
+    margin-left: 2em;
+    border-radius: 1em;
+  }
+  h2{
+      margin-left: 15em;
+      font-family: 'Lucida Bright';
+      color:white;
+      font-weight:bold;
+      
+  }
+  h6{margin-left: 20em;
+    font-family: 'Lucida Console';
+    color:white;
+    font-weight:bold;
+    margin-bottom: 30px;
+}
+.card1 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+    color:black;
+}
+.card1 .icon-block a{
+    text-decoration:none;
+}

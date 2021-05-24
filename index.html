@@ -1,143 +1,112 @@
 <html>
-    <head>
+  <head>
         <link rel="stylesheet" type="text/css" href="static/css/style.css">
         <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <!-- <link rel="stylesheet"  href="static/css/font-awesome.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
         <style>
-            .card{ height: 8em; border-radius: 4%;width: 12em;margin-left: 1.5em;background-color: #fcf8f8;
-                box-shadow: 0 6px 10px rgba(9, 83, 49, 0.08), 0 0 6px rgba(0,0,0,.05);
-                transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-                padding: 14px 80px 18px 36px;
-                cursor: pointer;  transform-style: preserve-3d; transition: all 0.5s ease-in-out;z-index: 1;              
-            }
-
-            .card:hover{
-                /* -webkit-background-clip: text; */
-                    /* -webkit-text-fill-color: transparent; */
-                opacity: 1;
-                transform :translateY(-2%);
-                /* transition: all 0.3s ease; */
-                    box-shadow: 0 10px 20px #04270e1f, 0 4px 8px rgba(0,0,0,.06);
-                        }
             .card-header{width:12em;height:2.5em;margin-left:-2.3em;margin-top:-0.9em;background-color:#56bb9d;border-radius:0.1em;}
-  /* #popup
-{
-  position : fixed;
-  top:-100%;
-  transform: translate(-50%,-50%);
-  z-index: 1000;
-  background-color: #fff;
-  /* /* width: 450px; */
-  /* transition: 0.5s;
-  visibility: hidden; 
-  opacity: 0;
-}
-#popup .content
-{
-    background-color: #f7f4f4;
-    overflow: hidden;
-}
-#open.active{visibility: visible;}
-#popup.active
-{
-  visibility: visible; */
-  /* transition: 0.5s;
-  opacity: 1; */ */
-  /* pointer-events: auto; */
-  /* display:flex; */
-/* } */
-            /* .front, .back{position:absolute;backface-visibility: hidden;}     
-            .card .back{ transform: rotateX(180deg);}   
-            .card.flipped {
-                -webkit-transform: rotateY( 180deg );
-                -moz-transform: rotateY( 180deg );
-                -o-transform: rotateY( 180deg );
-                transform: rotateY( 180deg ); */
-/* } */
-            /* .card:hover :checked {transform: rotateX(2deg);box-shadow: 0 20px 20px rgba(50,60,60,0.2); }
-            :checked + .card{transform: rotateX(180deg);}   
-            label:hover :checked + .card{transform: rotateX(175deg);box-shadow: 0 20px 20px rgba(255,255,255,0.2); }  */
-            * If you like this, be sure to ❤️ it. */
-/* .wrapper {
-  height: 100vh; */
-  /* This part is important for centering the content */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* End center */
-  /* background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
-  background: linear-gradient(to right, #834d9b, #d04ed6);
-} */
-
- a {
-  font-family: 'Roboto', sans-serif, cursive;
-}
-
-.modal {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  /* background: pink; */
-  transition: all .4s;
-}
-
-.modal:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.modal__content {
-  border-radius: 4px;
-  position: relative;
-  width: 200px;
-  height:200px;
-  margin-left: 48em;
-  margin-top: 15em;
-  max-width: 90%;
-  background: rgb(89, 170, 133);
-  opacity: 3px;
-  padding: .4;
-}
-.modal__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #585858;
-  text-decoration: none;
-}
-   </style>
-    </head>
-    <body>
-        <h2 style="margin-top:4em;font-size: 1.5em;">BUSHRA PARWEEN </h2>
-        <h6 style="margin-bottom:2em;font-size: 1em;">Web Designer & Web Developer</h6>
+            .modal {
+              visibility: hidden;
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              left: 0;
+              display: flex;
+              align-items: center;
+              /* background: pink; */
+              transition: all .4s;
+            }
+            .modal:target {
+              visibility: visible;
+              opacity: 1;
+            }
+            .card3
+            {
+              box-shadow:  0 4px 8px 0 rgba(131, 136, 97, 0.06);
+            padding: 2px;
+            text-align: center;
+            background-color: #4d7c6969;
+            height: 25em;
+            width: 18em;
+            margin-top: -1em;
+            margin-left: 9em;
+            border-radius: 1em;
+              }       
+            button{
+              background:#1AAB8A;
+              color:#fff;
+              border:none;
+              position:relative;
+              height:40px;
+              font-size:0.7em;
+              padding:0 2em;
+              cursor:pointer;
+              transition:800ms ease all;
+              outline:none;
+              width: 10em;
+              margin-top: 0.7em;
+              margin-left: -8em;
+            }
+            button:hover{
+              background:#fff;
+              color:#1AAB8A;
+            }
+            button:after,button:before{
+              content:'';
+              position:absolute;
+              top:0;
+              right:0;
+              height:2px;
+              width:0;
+              background: #1AAB8A;
+              transition:400ms ease all;
+            }
+            button:after{
+              right:inherit;
+              top:inherit;
+              left:0;
+              bottom:0;
+            }
+            button:hover:before,button:hover:after{
+              width:100%;
+              transition:800ms ease all;
+            }
+      </style>
+</head>
+ <body class="vid">
+        <h2 style="margin-top:4em;font-size: 1.5em;margin-left: 20em;">BUSHRA PARWEEN </h2>
+        <h6 style="margin-bottom:2em;font-size: 1em;margin-left: 30em;">Web Designer & Web Developer</h6>
         <div class="row">
             <div class="column">
-
+              <div class="card3">
+                  <img style="height:13em;margin-left: -3em;"src="static/Bushraprofilephoto.jpg"><br>
+                  <a href="static/BushraResume.pdf" download="BushraCv.pdf"><button ><p style="text-align: center;margin-left: -0.3em;margin-top:0.5em;">Download CV</p></button></a><br>
+                  <a href="#"><i style="color:rgb(54, 164, 228);font-size:25px;padding: 9 px;margin-left: -3em;" class="fa fa-facebook"></i></a>
+                  <a href="#"><i style="color:#b37f9f;font-size:25px;padding: 12px;margin-left: -2.5em;" class="fa fa-instagram"></i></a>               
+                </div>
+                </div>
+        <div class="row">
+            <div class="column">
               <div class="card1">
                     <h6 style="margin-bottom:2em;font-size:1.5em;color:#092723;margin-left: 0em;font-weight: bold;font-family:'MV Boli';">Hello , I'M Bushra </small></h6>
-                    <p><span style="color: black;font-weight: bold;">Email : </span><span style="font-family: Segoe Print;">bush@gmail.com</span></p>
-                    <p style="color: black;font-weight: bold;margin-left: -7em;">Address :</p>
+                    <p><span style="color: black;font-weight: bold;margin-left: -1em;">Email : </span><span style="font-family: Segoe Print;">bush@gmail.com</span></p>
+                    <p style="color: black;font-weight: bold;margin-left: -9em;">Address :</p>
                         <p style="font-family: Segoe UI;margin-top: -7%;">Jamshedpur,Jharkhand</p>
-                        <p style="color: black;font-weight: bold;margin-left: -7em;">Phone No :</p>
+                        <p style="color: black;font-weight: bold;margin-left: -8em;">Phone No :</p>
                         <p style="font-family: Segoe UI;margin-top: -7%;">+91  7208409443</p>
                     <div class="icon-block">
-                        <a href="#"><i style="color:black;font-size:35px;padding: 9 px;" class="fa fa-github"></i></a>
+                        <a href="https://github.com/404-bush"><i style="color:black;font-size:35px;padding: 9 px;" class="fa fa-github"></i></a>
                         <a href="#"> <i style="color:#64cddb;font-size:35px;padding: 12px;" class="fa fa-twitter"></i></a>
-                        <a href="#"> <i style="color:#3d69e0;font-size:35px" class="fa fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/bushra-parween-113118174/"> <i style="color:#3d69e0;font-size:35px" class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>  
             <div class="column">
               <div class="card2" style="width: 35em;background-color: #f7f4f4;">
-                <a style="text-decoration: none;" href=""><p style="color: #17555e;font-size:2em;font-family:Brush Script MT, Brush Script Std, cursive;">Resume</p></a>
+                <a style="text-decoration: none;" href=""><p style="color: #17555e;font-size:2em;font-family:Brush Script MT, Brush Script Std, cursive;">About Me</p></a>
                 <hr style="margin-top: -1em;color:#194d55;">
 
                 <div class="row">
@@ -145,18 +114,15 @@
                      <div class="card flipper ">
                          <div class="card-header">
                              <p style="color:black;font-size: 1.5em;" class="fa fa-desktop"></p></div>
-                             <a style="text-decoration: none;href='' "><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:1em;margin-right:-3em;color:#000000">My Projects</p></a>
-                            
+                             <a style="text-decoration: none;href='' "><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:0.5em;margin-right:-3em;color:#000000">My Projects</p></a>          
+                            <a class="btn1" style="text-decoration: none;" href="#demo1-modal">Details</a>                  
                     </div></div>
-
                     <div class="col-sm-6 mb-5">
                     <div class="column">
                         <div class="card" style="transform-style: preserve-3d;transition: all 0.5s ease-in-out;z-index:1">                          
                                 <div class="card-header"><p style="color:#da1cc1;font-size: 1.5em;" class="fa fa-paint-brush"></p></div>
-                                <a style="text-decoration: none;" href="https://www.instagram.com/invites/contact/?i=1l4h7e6awzl6i&utm_content=hbvrhsm"><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:1em;margin-right:-3em;color:#000000"> My Art Gallery</p></a>
-                                
-                            </div>                        
-            
+                                <a style="text-decoration: none;" href="https://www.instagram.com/invites/contact/?i=1l4h7e6awzl6i&utm_content=hbvrhsm"><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:1em;margin-right:-3em;color:#000000"> My Art Gallery</p></a>                               
+                            </div>                            
                 </div></div></div>
                 <div class="row">
                     <div class="column" style="margin-right: 6em;">
@@ -166,42 +132,53 @@
                     </div>
                     <div class="col-sm-6 mb-3">
                     <div class="column">
-                        <div class="card" style="margin-top:-1em;"><div class="card-header" )><p style="color:#0c0c0c;font-size: 1.5em;" class="fa fa-code"></p></div>
-                        <a style="text-decoration: none;"><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:0.5em;margin-right:-3em;color:#000000">My Skills</p></a>
-                        <!-- <div class="wrapper"> -->
-                            <a style="color:#092723;font-size:16px;margin-top:-1em;margin-right:-3em;text-decoration: none;" href="#demo-modal">Details</a>
-                        <!-- </div> -->
-                    </div></div></div>
-                    
-
+                        <div class="card" id="card" style="margin-top:-1em;"><div class="card-header" )><p style="color:#0c0c0c;font-size: 1.5em;" class="fa fa-code"></p></div>
+                        <a><p style="font-family:Brush Script MT, Brush Script Std, cursive;font-size:23px;margin-top:0.5em;margin-right:-3em;color:#000000">My Skills</p></a>             
+                            <a class="btn1" style="text-decoration: none;" href="#demo-modal">Details</a>                 
+                    </div>
+                  </div></div>
             </div>
             </div>
-            <!-- Modal -->
             <div id="demo-modal" class="modal">
                 <div class="modal__content">
-                    
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                    <a href="#" class="modal__close">&times;</a>
-                  <div class="modal-body">
+                  <div style="height:3em;" class="modal-header">
+                    <a style="margin-left:8em" href="#" class="modal__close">&times;</a>
+                    <p style="font-size: 18px;margin-left:-11em;">Technical Skills</p>
+                    </div>
+                  <div class="modal-body1">
                     <ul>
-                      <li></li>
+                      <li> java</li>
+                      <li>pyhton</li>
+                      <li>c</li>
+                       <li>Django</li>
+                       <li>Flask</li>
+                       <li>MySql</li>
+                      <li>bootstrap</li>
+                      <li>html</li>
+                      <li>css</li> 
+                      <li>Javascript</li>
+                      <li>Jquery</li>
                     </ul>
-                  </div>
-                  
+                  </div>      
                 </div>
               </div>
             </div>
-            <script>
-                    function popupToggle(){
-                        const open=document.getElementById('open');
-                        const popup=document.getElementById('popup');
-                        // const close =document.getElementById('click' ,()=>{popup.classList.add('show');});
-                        // const close =document.getElementById('click' ,()=>{popup.classList.remove('show');});
-                        open.classList.toggle('active');
-                        popup.classList.toggle('active');
-                    }
-
-            </script>
-        </body>
-    
+            <div id="demo1-modal" class="modal">
+              <div class="modal__content1">
+                <div class="modal-header">
+                  <a style="margin-left:9em" href="#" class="modal__close">&times;</a>
+                  <p style="font-size: 20px;margin-left:-20em;">Projects Content</p>
+                  </div>
+                  <div class="modal-body">
+                  <ul>
+                    <li> <a style="text-decoration: none;" href="https://github.com/404-bush/Django-Ecommerce-App" >Online Ecommerce App</a></li>
+                    <li><a style="text-decoration: none;" href="https://github.com/404-bush/Simple-Django-CRUD-App" >Simple CRUD App</a></li>
+                    <li> <a style="text-decoration: none;" href="https://github.com/404-bush/contact-Book-Flask-Mysql" >Contact Management System</a></li>
+                    <li><a style="text-decoration: none;" href="">User Registration & Authentication</a></li>  
+                    <li><a style="text-decoration: none;" href="">Online Hotel Managemnet System</a></li>
+                  </ul>
+                  </div>
+            </div>
+          </div>
+        </body>  
 </html>
